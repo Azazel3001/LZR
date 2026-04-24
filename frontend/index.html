@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>LZR</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- LOGIN -->
+  <div id="login">
+    <div class="left">
+      <img src="/uploads/logo.png" class="logo">
+      <h1>LZR</h1>
+      <p>CONTROL TOTAL · PODER REAL</p>
+    </div>
+
+    <div class="right">
+      <h2>INICIAR SESIÓN</h2>
+
+      <input id="userInput" placeholder="Usuario">
+      <input id="passInput" type="password" placeholder="Contraseña">
+
+      <button onclick="login()">Entrar</button>
+    </div>
+  </div>
+
+  <!-- APP -->
+  <div id="app" style="display:none">
+
+    <div class="navbar">
+      <h1>LZR PANEL</h1>
+      <button onclick="logout()">Salir</button>
+    </div>
+
+    <div class="form">
+      <input id="brand" placeholder="Marca">
+      <input id="model" placeholder="Modelo">
+      <input id="category" placeholder="Categoría">
+      <input id="price" placeholder="Precio">
+      <input id="quantity" placeholder="Cantidad">
+      <input type="file" id="image">
+      <button onclick="addProduct()">Agregar</button>
+    </div>
+
+    <div id="list"></div>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
